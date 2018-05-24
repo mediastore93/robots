@@ -14,7 +14,7 @@ def right():
 def stop():
     robby.stop()
 
-try: 
+while True: 
 
     direction = input("Which direction - f, b, l, r?")
     time.sleep(1)
@@ -40,12 +40,3 @@ try:
         time.sleep(distance)
         stop()
         time.sleep(1)
-
-except KeyboardInterrupt:
-       pass
-#finally:
-#    GPIO.cleanup()
-
-
-
-
