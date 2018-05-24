@@ -25,7 +25,7 @@ while True:
             time.sleep(distance)
             stop()
         if direction == "b":
-            reverse()
+            backward()
             time.sleep(distance)
             stop()
         if direction == "l":
