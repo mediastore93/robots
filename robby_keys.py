@@ -14,20 +14,29 @@ def right():
 def stop():
     robby.stop()
 
+while True: 
+
+    direction = input("Which direction - f, b, l, r?")
+    time.sleep(1)
+    distance = input("Drive for ? seconds?")
+
+        if direction == "f":
+            forward()
+            time.sleep(distance)
+            stop()
+        if direction == "b":
+            reverse()
+            time.sleep(distance)
+            stop()
+        if direction == "l":
+            left()
+            time.sleep(distance)
+            stop()
+        if direction == "r":
+            right()
+            time.sleep(distance)
+            stop()
 
 
 
-direction = input("Which direction - f, b, l, r?")
-time.sleep(1)
-distance = input("How far?")
-if direction == "f" and distance == "1":
-    forward()
-    time.sleep(3)
-    stop()
-        
-
-
-#forward()
-#time.sleep(2)
-#stop()
 
